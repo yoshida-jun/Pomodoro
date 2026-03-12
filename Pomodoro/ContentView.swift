@@ -62,7 +62,7 @@ struct ContentView: View {
             }
             .pickerStyle(.segmented)
             .padding(.horizontal)
-            .onChange(of: mode) { _, newMode in
+            .onChange(of: mode) { newMode in
                 reset(to: newMode)
             }
 
